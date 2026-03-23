@@ -15,14 +15,13 @@ app_icon = "servicios_publicos/public/synapse_logo.png"
 tagline = "Agua • Luz • Gas • Datos"
 tagline_color = "#1b9e8f"
 
-# Router
-# NOTA: Archivos CSS/JS se agregarán conforme se desarrollen
-# app_include_css = [
-#     "/assets/servicios_publicos/css/servicios_publicos.css"
-# ]
-# app_include_js = [
-#     "/assets/servicios_publicos/js/servicios_publicos.js"
-# ]
+# Router - Assets
+app_include_css = [
+	"servicios_publicos/public/css/servicios_publicos.css"
+]
+app_include_js = [
+	"servicios_publicos/public/js/servicios_publicos.js"
+]
 
 # Includes in <head>
 # ---------------

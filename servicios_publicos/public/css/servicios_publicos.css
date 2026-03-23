@@ -1,0 +1,12 @@
+/* Servicios Públicos Colombia - Estilos principales */
+
+:root {
+  --primary-color: #1b9e8f;
+  --primary-light: #28b5a1;
+  --primary-dark: #15846f;
+}
+
+/* Placeholder para estilos personalizados */
+body.servicios-publicos {
+  /* Estilos serán agregados conforme se desarrollen */
+}
