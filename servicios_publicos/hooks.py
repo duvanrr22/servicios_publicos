@@ -16,12 +16,13 @@ tagline = "Agua • Luz • Gas • Datos"
 tagline_color = "#1b9e8f"
 
 # Router
-app_include_css = [
-    "/assets/servicios_publicos/css/servicios_publicos.css"
-]
-app_include_js = [
-    "/assets/servicios_publicos/js/servicios_publicos.js"
-]
+# NOTA: Archivos CSS/JS se agregarán conforme se desarrollen
+# app_include_css = [
+#     "/assets/servicios_publicos/css/servicios_publicos.css"
+# ]
+# app_include_js = [
+#     "/assets/servicios_publicos/js/servicios_publicos.js"
+# ]
 
 # Includes in <head>
 # ---------------
