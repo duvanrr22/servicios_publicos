@@ -1,0 +1,34 @@
+{
+ "actions": [],
+ "allow_on_submit": 0,
+ "autoname": "hash",
+ "creation": "2024-01-15 10:00:00.000000",
+ "doctype": "DocType",
+ "document_type": "Row",
+ "engine": "InnoDB",
+ "field_order": [
+  "numero",
+  "tipo"
+ ],
+ "fields": [
+  {
+   "fieldname": "numero",
+   "fieldtype": "Data",
+   "label": "Número",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tipo",
+   "fieldtype": "Select",
+   "label": "Tipo",
+   "options": "Celular\nFijo\nWhatsApp"
+  }
+ ],
+ "istable": 1,
+ "modified": "2024-01-15 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Servicios Publicos",
+ "name": "Telefono Contacto",
+ "owner": "Administrator",
+ "permissions": []
+}

@@ -1,0 +1,168 @@
+<!-- 
+Synapse - Servicios Publicos Colombia
+Template HTML para reportes de facturacion con logo
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid #1b9e8f;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .logo {
+            max-width: 150px;
+            height: auto;
+        }
+        
+        .header-info {
+            text-align: right;
+        }
+        
+        .company-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1b9e8f;
+        }
+        
+        .tagline {
+            font-size: 13px;
+            color: #7cb342;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        
+        .factura-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #1b9e8f;
+            margin: 20px 0 10px 0;
+        }
+        
+        .factura-info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+        
+        .info-block {
+            flex: 1;
+        }
+        
+        .info-label {
+            font-weight: bold;
+            color: #1b9e8f;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        table th {
+            background-color: #1b9e8f;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: bold;
+        }
+        
+        table td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .total-section {
+            text-align: right;
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 2px solid #1b9e8f;
+        }
+        
+        .total-row {
+            display: flex;
+            justify-content: flex-end;
+            padding: 5px 0;
+            font-size: 12px;
+        }
+        
+        .total-label {
+            font-weight: bold;
+            width: 150px;
+        }
+        
+        .total-value {
+            width: 100px;
+            text-align: right;
+        }
+        
+        .gran-total {
+            font-size: 16px;
+            font-weight: bold;
+            color: #1b9e8f;
+            border-top: 2px solid #1b9e8f;
+            padding-top: 10px;
+        }
+        
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            font-size: 11px;
+            text-align: center;
+            color: #666;
+        }
+        
+        .footer-text {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Este template se integra con Frappe para generar reportes -->
+    
+    <div class="header">
+        <div>
+            <img src="/assets/servicios_publicos/public/synapse_logo.png" class="logo" alt="Synapse Servicios Públicos">
+        </div>
+        <div class="header-info">
+            <div class="company-name">Synapse</div>
+            <div class="tagline">Agua • Luz • Gas • Datos</div>
+        </div>
+    </div>
+    
+    <div class="factura-title">FACTURA DE SERVICIOS</div>
+    
+    <!-- Este contenido se llenaria dinamicamente con los datos de Frappe -->
+    
+    <div class="footer">
+        <div class="footer-text">Servicios Públicos Colombia - Sistema de Facturación Sinapse</div>
+        <div class="footer-text">Versión 1.0.0 | Licencia GPL-3.0</div>
+    </div>
+</body>
+</html>

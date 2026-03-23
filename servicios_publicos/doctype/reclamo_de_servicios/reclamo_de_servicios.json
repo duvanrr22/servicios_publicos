@@ -1,0 +1,242 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-01-15 10:00:00.000000",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "numero_reclamo",
+  "cliente",
+  "conexion_de_servicio",
+  "column_break_4",
+  "prestador_de_servicios",
+  "tipo_de_servicio",
+  "informacion_reclamo_section",
+  "fecha_reclamo",
+  "tipo_reclamo",
+  "prioridad",
+  "asunto",
+  "descripcion_reclamo",
+  "detalles_section",
+  "fecha_evento",
+  "valor_afectado",
+  "adjuntos",
+  "gestion_section",
+  "responsable",
+  "fecha_asignacion",
+  "fecha_resolucion_esperada",
+  "estado_reclamo",
+  "solucion_propuesta",
+  "estado_final_section",
+  "resolucion",
+  "satisfaccion_cliente",
+  "observaciones"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Serie de Nomenclatura",
+   "options": "REC-.YYYY.-",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "numero_reclamo",
+   "fieldtype": "Data",
+   "label": "Número de Reclamo",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "cliente",
+   "fieldtype": "Link",
+   "label": "Cliente",
+   "options": "Cliente Servicios Públicos",
+   "reqd": 1
+  },
+  {
+   "fieldname": "conexion_de_servicio",
+   "fieldtype": "Link",
+   "label": "Conexión de Servicio",
+   "options": "Conexion de Servicio"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "prestador_de_servicios",
+   "fieldtype": "Link",
+   "label": "Prestador de Servicios",
+   "options": "Prestador de Servicios",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tipo_de_servicio",
+   "fieldtype": "Link",
+   "label": "Tipo de Servicio",
+   "options": "Tipo de Servicio"
+  },
+  {
+   "fieldname": "informacion_reclamo_section",
+   "fieldtype": "Section Break",
+   "label": "Información del Reclamo"
+  },
+  {
+   "fieldname": "fecha_reclamo",
+   "fieldtype": "Date",
+   "label": "Fecha del Reclamo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tipo_reclamo",
+   "fieldtype": "Select",
+   "label": "Tipo de Reclamo",
+   "options": "Facturación\nCalidad del Servicio\nAvería\nServicio Intermitente\nTarifas\nErrores Técnicos\nOtro",
+   "reqd": 1
+  },
+  {
+   "fieldname": "prioridad",
+   "fieldtype": "Select",
+   "label": "Prioridad",
+   "options": "Baja\nMedia\nAlta\nCrítica",
+   "reqd": 1
+  },
+  {
+   "fieldname": "asunto",
+   "fieldtype": "Data",
+   "label": "Asunto del Reclamo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "descripcion_reclamo",
+   "fieldtype": "Text Editor",
+   "label": "Descripción del Reclamo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "detalles_section",
+   "fieldtype": "Section Break",
+   "label": "Detalles Técnicos"
+  },
+  {
+   "fieldname": "fecha_evento",
+   "fieldtype": "Date",
+   "label": "Fecha del Evento"
+  },
+  {
+   "fieldname": "valor_afectado",
+   "fieldtype": "Currency",
+   "label": "Valor Afectado",
+   "precision": "2"
+  },
+  {
+   "fieldname": "adjuntos",
+   "fieldtype": "Attach",
+   "label": "Adjuntos (Evidencias)"
+  },
+  {
+   "fieldname": "gestion_section",
+   "fieldtype": "Section Break",
+   "label": "Gestión del Reclamo"
+  },
+  {
+   "fieldname": "responsable",
+   "fieldtype": "Link",
+   "label": "Responsable",
+   "options": "User"
+  },
+  {
+   "fieldname": "fecha_asignacion",
+   "fieldtype": "Date",
+   "label": "Fecha de Asignación"
+  },
+  {
+   "fieldname": "fecha_resolucion_esperada",
+   "fieldtype": "Date",
+   "label": "Fecha de Resolución Esperada"
+  },
+  {
+   "fieldname": "estado_reclamo",
+   "fieldtype": "Select",
+   "label": "Estado del Reclamo",
+   "options": "Registrado\nEn Análisis\nEn Proceso\nResuelto\nCerrado\nRechazado",
+   "reqd": 1
+  },
+  {
+   "fieldname": "solucion_propuesta",
+   "fieldtype": "Text",
+   "label": "Solución Propuesta"
+  },
+  {
+   "fieldname": "estado_final_section",
+   "fieldtype": "Section Break",
+   "label": "Resolución Final"
+  },
+  {
+   "fieldname": "resolucion",
+   "fieldtype": "Text Editor",
+   "label": "Resolución"
+  },
+  {
+   "fieldname": "satisfaccion_cliente",
+   "fieldtype": "Select",
+   "label": "Satisfacción del Cliente",
+   "options": "Muy Insatisfecho\nInsatisfecho\nNeutral\nSatisfecho\nMuy Satisfecho"
+  },
+  {
+   "fieldname": "observaciones",
+   "fieldtype": "Text",
+   "label": "Observaciones Finales"
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-01-15 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Servicios Publicos",
+ "name": "Reclamo de Servicios",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrador de Servicios",
+   "share": 0,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Client",
+   "share": 0,
+   "submit": 0,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

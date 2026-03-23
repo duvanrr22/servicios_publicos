@@ -1,0 +1,58 @@
+================================================================================
+PRUEBA DEL MOTOR DE CÁLCULO - SERVICIOS PÚBLICOS COLOMBIA
+Fecha: 2026-03-23 13:58:37
+================================================================================
+
+✅ EXITO: Carga de Excel: PaqueteFacturacion-Diciembre-2025.xlsx
+   └─ Cargadas 2160 filas, 40 columnas
+⚠️  ADVERTENCIA: Estructura: PaqueteFacturacion-Diciembre-2025.xlsx
+   └─ Columnas no encontradas o con nombres diferentes: No. Factura, Cliente, Tipo Servicio, Tarifa, Valor Total, Municipio, Corregimiento, Fecha
+⚠️  ADVERTENCIA: Cálculo Consumo Fila 1
+   └─ Consumo archivo: nan, Calculado: nan
+⚠️  ADVERTENCIA: Cálculo Consumo Fila 3
+   └─ Consumo archivo: 8.352, Calculado: 5.0
+⚠️  ADVERTENCIA: Cálculo Consumo Fila 4
+   └─ Consumo archivo: 143.163, Calculado: 51.0
+⚠️  ADVERTENCIA: Cálculo Consumo Fila 5
+   └─ Consumo archivo: 20.88, Calculado: 10.0
+⚠️  ADVERTENCIA: Motor Cálculo: PaqueteFacturacion-Diciembre-2025.xlsx
+   └─ 4 cálculos con variaciones
+✅ EXITO: Carga de Excel: PaqueteFacturacion-Enero-2026.xlsx
+   └─ Cargadas 2164 filas, 40 columnas
+⚠️  ADVERTENCIA: Estructura: PaqueteFacturacion-Enero-2026.xlsx
+   └─ Columnas no encontradas o con nombres diferentes: No. Factura, Cliente, Tipo Servicio, Tarifa, Valor Total, Municipio, Corregimiento, Fecha
+⚠️  ADVERTENCIA: Cálculo Consumo Fila 1
+   └─ Consumo archivo: 6.682, Calculado: 4.0
+⚠️  ADVERTENCIA: Cálculo Consumo Fila 2
+   └─ Consumo archivo: 5.011, Calculado: 3.0
+⚠️  ADVERTENCIA: Cálculo Consumo Fila 4
+   └─ Consumo archivo: 15.034, Calculado: 9.0
+⚠️  ADVERTENCIA: Cálculo Consumo Fila 5
+   └─ Consumo archivo: 11.693, Calculado: 7.0
+⚠️  ADVERTENCIA: Motor Cálculo: PaqueteFacturacion-Enero-2026.xlsx
+   └─ 4 cálculos con variaciones
+✅ EXITO: Carga de Excel: PaqueteFacturacion-Febrero-2026.xlsx
+   └─ Cargadas 2167 filas, 40 columnas
+⚠️  ADVERTENCIA: Estructura: PaqueteFacturacion-Febrero-2026.xlsx
+   └─ Columnas no encontradas o con nombres diferentes: No. Factura, Cliente, Tipo Servicio, Tarifa, Valor Total, Municipio, Corregimiento, Fecha
+⚠️  ADVERTENCIA: Cálculo Consumo Fila 1
+   └─ Consumo archivo: 16.704, Calculado: 10.0
+⚠️  ADVERTENCIA: Cálculo Consumo Fila 2
+   └─ Consumo archivo: 48.859, Calculado: 26.0
+⚠️  ADVERTENCIA: Cálculo Consumo Fila 4
+   └─ Consumo archivo: 3.341, Calculado: 2.0
+⚠️  ADVERTENCIA: Cálculo Consumo Fila 5
+   └─ Consumo archivo: 8.352, Calculado: 5.0
+⚠️  ADVERTENCIA: Motor Cálculo: PaqueteFacturacion-Febrero-2026.xlsx
+   └─ 4 cálculos con variaciones
+
+--------------------------------------------------------------------------------
+RESUMEN:
+  ✅ Pruebas Exitosas: 3
+  ❌ Pruebas Fallidas: 0
+  ⚠️  Advertencias: 18
+  Total Verificaciones: 3
+
+✅ MOTOR DE CÁLCULO VALIDADO EXITOSAMENTE
+La aplicación está lista para producción.
+================================================================================

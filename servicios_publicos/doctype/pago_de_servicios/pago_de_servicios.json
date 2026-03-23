@@ -1,0 +1,176 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-01-15 10:00:00.000000",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "numero_pago",
+  "factura_de_servicios",
+  "cliente",
+  "column_break_4",
+  "tipo_de_servicio",
+  "prestador_de_servicios",
+  "informacion_pago_section",
+  "fecha_pago",
+  "metodo_pago",
+  "numero_referencia",
+  "valor_pagado",
+  "column_break_10",
+  "cuenta_bancaria_destino",
+  "comprobante_pago",
+  "observaciones",
+  "estado_section",
+  "estado_pago"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Serie de Nomenclatura",
+   "options": "PAG-.YYYY.-",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "numero_pago",
+   "fieldtype": "Data",
+   "label": "Número de Pago",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "factura_de_servicios",
+   "fieldtype": "Link",
+   "label": "Factura de Servicios",
+   "options": "Factura de Servicios",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cliente",
+   "fieldtype": "Link",
+   "label": "Cliente",
+   "options": "Cliente Servicios Públicos",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tipo_de_servicio",
+   "fieldtype": "Link",
+   "label": "Tipo de Servicio",
+   "options": "Tipo de Servicio",
+   "read_only": 1
+  },
+  {
+   "fieldname": "prestador_de_servicios",
+   "fieldtype": "Link",
+   "label": "Prestador de Servicios",
+   "options": "Prestador de Servicios",
+   "read_only": 1
+  },
+  {
+   "fieldname": "informacion_pago_section",
+   "fieldtype": "Section Break",
+   "label": "Información del Pago"
+  },
+  {
+   "fieldname": "fecha_pago",
+   "fieldtype": "Date",
+   "label": "Fecha de Pago",
+   "reqd": 1
+  },
+  {
+   "fieldname": "metodo_pago",
+   "fieldtype": "Select",
+   "label": "Método de Pago",
+   "options": "Efectivo\nTransferencia Bancaria\nTarjeta Crédito\nTarjeta Débito\nCheque\nOtro",
+   "reqd": 1
+  },
+  {
+   "fieldname": "numero_referencia",
+   "fieldtype": "Data",
+   "label": "Número de Referencia"
+  },
+  {
+   "fieldname": "valor_pagado",
+   "fieldtype": "Currency",
+   "label": "Valor Pagado",
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cuenta_bancaria_destino",
+   "fieldtype": "Data",
+   "label": "Cuenta Bancaria Destino"
+  },
+  {
+   "fieldname": "comprobante_pago",
+   "fieldtype": "Attach",
+   "label": "Comprobante de Pago"
+  },
+  {
+   "fieldname": "observaciones",
+   "fieldtype": "Text",
+   "label": "Observaciones"
+  },
+  {
+   "fieldname": "estado_section",
+   "fieldtype": "Section Break",
+   "label": "Estado"
+  },
+  {
+   "fieldname": "estado_pago",
+   "fieldtype": "Select",
+   "label": "Estado del Pago",
+   "options": "Registrado\nVerificado\nAplicado\nRechazado",
+   "reqd": 1
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-01-15 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Servicios Publicos",
+ "name": "Pago de Servicios",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Facturador",
+   "share": 0,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

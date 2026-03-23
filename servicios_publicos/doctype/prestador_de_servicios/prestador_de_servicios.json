@@ -1,0 +1,187 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:razon_social",
+ "creation": "2024-01-15 10:00:00.000000",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "razon_social",
+  "nit",
+  "tipo_de_empresa",
+  "column_break_4",
+  "representante_legal",
+  "email",
+  "telefonos_section",
+  "telefonos",
+  "direccion_section",
+  "direccion",
+  "ciudad",
+  "departamento",
+  "codigo_postal",
+  "servicios_section",
+  "tipos_de_servicios",
+  "informacion_section",
+  "descripcion",
+  "fecha_constitucion",
+  "estado",
+  "informacion_financiera",
+  "cuenta_bancaria"
+ ],
+ "fields": [
+  {
+   "fieldname": "razon_social",
+   "fieldtype": "Data",
+   "label": "Razón Social",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "nit",
+   "fieldtype": "Data",
+   "label": "NIT",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "tipo_de_empresa",
+   "fieldtype": "Select",
+   "label": "Tipo de Empresa",
+   "options": "Municipal\nPrivada\nComunal\nOtra",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "representante_legal",
+   "fieldtype": "Data",
+   "label": "Representante Legal"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Email",
+   "label": "Email Institucional"
+  },
+  {
+   "fieldname": "telefonos_section",
+   "fieldtype": "Section Break",
+   "label": "Contacto"
+  },
+  {
+   "fieldname": "telefonos",
+   "fieldtype": "Table",
+   "label": "Teléfonos",
+   "options": "Telefono_Contacto"
+  },
+  {
+   "fieldname": "direccion_section",
+   "fieldtype": "Section Break",
+   "label": "Dirección"
+  },
+  {
+   "fieldname": "direccion",
+   "fieldtype": "Data",
+   "label": "Dirección"
+  },
+  {
+   "fieldname": "ciudad",
+   "fieldtype": "Link",
+   "label": "Ciudad",
+   "options": "City"
+  },
+  {
+   "fieldname": "departamento",
+   "fieldtype": "Link",
+   "label": "Departamento",
+   "options": "State"
+  },
+  {
+   "fieldname": "codigo_postal",
+   "fieldtype": "Data",
+   "label": "Código Postal"
+  },
+  {
+   "fieldname": "servicios_section",
+   "fieldtype": "Section Break",
+   "label": "Servicios Prestados"
+  },
+  {
+   "fieldname": "tipos_de_servicios",
+   "fieldtype": "Table",
+   "label": "Tipos de Servicios",
+   "options": "Servicio_Prestado"
+  },
+  {
+   "fieldname": "informacion_section",
+   "fieldtype": "Section Break",
+   "label": "Información Adicional"
+  },
+  {
+   "fieldname": "descripcion",
+   "fieldtype": "Text",
+   "label": "Descripción"
+  },
+  {
+   "fieldname": "fecha_constitucion",
+   "fieldtype": "Date",
+   "label": "Fecha de Constitución"
+  },
+  {
+   "fieldname": "estado",
+   "fieldtype": "Select",
+   "label": "Estado",
+   "options": "Activo\nInactivo\nSuspendido",
+   "reqd": 1
+  },
+  {
+   "fieldname": "informacion_financiera",
+   "fieldtype": "Section Break",
+   "label": "Información Financiera"
+  },
+  {
+   "fieldname": "cuenta_bancaria",
+   "fieldtype": "Data",
+   "label": "Cuenta Bancaria"
+  }
+ ],
+ "is_submittable": 0,
+ "links": [],
+ "modified": "2024-01-15 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Servicios Publicos",
+ "name": "Prestador de Servicios",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "submit": 0,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrador de Servicios",
+   "share": 0,
+   "submit": 0,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

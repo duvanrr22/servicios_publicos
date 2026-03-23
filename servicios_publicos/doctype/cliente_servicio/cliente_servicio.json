@@ -1,0 +1,36 @@
+{
+ "actions": [],
+ "allow_on_submit": 0,
+ "autoname": "hash",
+ "creation": "2024-01-15 10:00:00.000000",
+ "doctype": "DocType",
+ "document_type": "Row",
+ "engine": "InnoDB",
+ "field_order": [
+  "tipo_de_servicio",
+  "estado"
+ ],
+ "fields": [
+  {
+   "fieldname": "tipo_de_servicio",
+   "fieldtype": "Link",
+   "label": "Tipo de Servicio",
+   "options": "Tipo de Servicio",
+   "reqd": 1
+  },
+  {
+   "fieldname": "estado",
+   "fieldtype": "Select",
+   "label": "Estado",
+   "options": "Activo\nInactivo",
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2024-01-15 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Servicios Publicos",
+ "name": "Cliente Servicio",
+ "owner": "Administrator",
+ "permissions": []
+}

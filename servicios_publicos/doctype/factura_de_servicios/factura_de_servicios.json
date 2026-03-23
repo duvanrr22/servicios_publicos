@@ -1,0 +1,262 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-01-15 10:00:00.000000",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "numero_factura",
+  "conexion_de_servicio",
+  "cliente",
+  "column_break_1",
+  "prestador_de_servicios",
+  "tipo_de_servicio",
+  "periodo_factura",
+  "fechas_section",
+  "fecha_emision",
+  "fecha_vencimiento",
+  "fecha_lectura",
+  "detalles_consumo_section",
+  "lectura_anterior",
+  "lectura_actual",
+  "consumo_facturado",
+  "tarifa_aplicada",
+  "column_break_11",
+  "valor_consumo",
+  "impuestos",
+  "descuentos",
+  "deuda_anterior",
+  "totales_section",
+  "valor_total",
+  "valor_pagado",
+  "saldo_pendiente",
+  "estado_section",
+  "estado_factura",
+  "observaciones"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Serie de Nomenclatura",
+   "options": "FAC-.YYYY.-",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "numero_factura",
+   "fieldtype": "Data",
+   "label": "Número de Factura",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "conexion_de_servicio",
+   "fieldtype": "Link",
+   "label": "Conexión de Servicio",
+   "options": "Conexion de Servicio",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cliente",
+   "fieldtype": "Link",
+   "label": "Cliente",
+   "options": "Cliente Servicios Públicos",
+   "reqd": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "prestador_de_servicios",
+   "fieldtype": "Link",
+   "label": "Prestador de Servicios",
+   "options": "Prestador de Servicios",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tipo_de_servicio",
+   "fieldtype": "Link",
+   "label": "Tipo de Servicio",
+   "options": "Tipo de Servicio",
+   "reqd": 1
+  },
+  {
+   "fieldname": "periodo_factura",
+   "fieldtype": "Data",
+   "label": "Período de Factura",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fechas_section",
+   "fieldtype": "Section Break",
+   "label": "Fechas"
+  },
+  {
+   "fieldname": "fecha_emision",
+   "fieldtype": "Date",
+   "label": "Fecha de Emisión",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fecha_vencimiento",
+   "fieldtype": "Date",
+   "label": "Fecha de Vencimiento",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fecha_lectura",
+   "fieldtype": "Date",
+   "label": "Fecha de Lectura"
+  },
+  {
+   "fieldname": "detalles_consumo_section",
+   "fieldtype": "Section Break",
+   "label": "Detalles de Consumo"
+  },
+  {
+   "fieldname": "lectura_anterior",
+   "fieldtype": "Float",
+   "label": "Lectura Anterior",
+   "precision": "2"
+  },
+  {
+   "fieldname": "lectura_actual",
+   "fieldtype": "Float",
+   "label": "Lectura Actual",
+   "precision": "2"
+  },
+  {
+   "fieldname": "consumo_facturado",
+   "fieldtype": "Float",
+   "label": "Consumo Facturado",
+   "precision": "2"
+  },
+  {
+   "fieldname": "tarifa_aplicada",
+   "fieldtype": "Link",
+   "label": "Tarifa Aplicada",
+   "options": "Tarifa Servicios"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "valor_consumo",
+   "fieldtype": "Currency",
+   "label": "Valor del Consumo",
+   "precision": "2"
+  },
+  {
+   "fieldname": "impuestos",
+   "fieldtype": "Currency",
+   "label": "Impuestos",
+   "precision": "2"
+  },
+  {
+   "fieldname": "descuentos",
+   "fieldtype": "Currency",
+   "label": "Descuentos",
+   "precision": "2"
+  },
+  {
+   "fieldname": "deuda_anterior",
+   "fieldtype": "Currency",
+   "label": "Deuda Anterior",
+   "precision": "2"
+  },
+  {
+   "fieldname": "totales_section",
+   "fieldtype": "Section Break",
+   "label": "Totales"
+  },
+  {
+   "fieldname": "valor_total",
+   "fieldtype": "Currency",
+   "label": "Valor Total a Pagar",
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "valor_pagado",
+   "fieldtype": "Currency",
+   "label": "Valor Pagado",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "saldo_pendiente",
+   "fieldtype": "Currency",
+   "label": "Saldo Pendiente",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "estado_section",
+   "fieldtype": "Section Break",
+   "label": "Estado"
+  },
+  {
+   "fieldname": "estado_factura",
+   "fieldtype": "Select",
+   "label": "Estado de la Factura",
+   "options": "Borrador\nEmitida\nPagada\nParcialmente Pagada\nVencida",
+   "reqd": 1
+  },
+  {
+   "fieldname": "observaciones",
+   "fieldtype": "Text",
+   "label": "Observaciones"
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-01-15 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Servicios Publicos",
+ "name": "Factura de Servicios",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Facturador",
+   "share": 0,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "report": 1,
+   "role": "Administrador de Servicios",
+   "share": 0,
+   "submit": 0,
+   "write": 0
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

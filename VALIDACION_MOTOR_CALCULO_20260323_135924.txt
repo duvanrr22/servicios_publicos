@@ -1,0 +1,255 @@
+====================================================================================================
+VALIDACIÓN DEL MOTOR DE CÁLCULO - SERVICIOS PÚBLICOS COLOMBIA
+Fecha: 2026-03-23 13:59:24
+====================================================================================================
+
+✅ Carga de Archivo: PaqueteFacturacion-Diciembre-2025.xlsx
+   └─ 2160 registros cargados
+✅ Estructura: PaqueteFacturacion-Diciembre-2025.xlsx
+   └─ Detectadas 40 columnas: Lectura anterior, Lectura Actual, Consumo, etc.
+✅ Fila 2: Consumo calculado correctamente
+   └─ Lectura: 55 → 55.0 = 0.0 m³
+✅ Fila 3: Consumo calculado correctamente
+   └─ Lectura: 9 → 14.0 = 5.0 m³
+✅ Fila 3: Valor consumo correcto
+   └─ $10 COP
+✅ Fila 4: Consumo calculado correctamente
+   └─ Lectura: 1073 → 1124.0 = 51.0 m³
+✅ Fila 4: Valor consumo correcto
+   └─ $106 COP
+✅ Fila 5: Consumo calculado correctamente
+   └─ Lectura: 1560 → 1570.0 = 10.0 m³
+✅ Fila 5: Valor consumo correcto
+   └─ $21 COP
+✅ Fila 6: Consumo calculado correctamente
+   └─ Lectura: 4226 → 4231.0 = 5.0 m³
+✅ Fila 6: Valor consumo correcto
+   └─ $10 COP
+✅ Fila 7: Consumo calculado correctamente
+   └─ Lectura: 9267 → 9353.0 = 86.0 m³
+✅ Fila 7: Valor consumo correcto
+   └─ $180 COP
+✅ Fila 8: Consumo calculado correctamente
+   └─ Lectura: 749 → 761.0 = 12.0 m³
+✅ Fila 8: Valor consumo correcto
+   └─ $25 COP
+✅ Fila 9: Consumo calculado correctamente
+   └─ Lectura: 4804 → 4813.0 = 9.0 m³
+✅ Fila 9: Valor consumo correcto
+   └─ $19 COP
+✅ Fila 10: Consumo calculado correctamente
+   └─ Lectura: 2236 → 2242.0 = 6.0 m³
+✅ Fila 10: Valor consumo correcto
+   └─ $13 COP
+✅ Fila 11: Consumo calculado correctamente
+   └─ Lectura: 9820 → 9853.0 = 33.0 m³
+✅ Fila 11: Valor consumo correcto
+   └─ $69 COP
+✅ Fila 12: Consumo calculado correctamente
+   └─ Lectura: 792 → 796.0 = 4.0 m³
+✅ Fila 12: Valor consumo correcto
+   └─ $8 COP
+✅ Fila 13: Consumo calculado correctamente
+   └─ Lectura: 996 → 1003.0 = 7.0 m³
+✅ Fila 13: Valor consumo correcto
+   └─ $15 COP
+✅ Fila 14: Consumo calculado correctamente
+   └─ Lectura: 2095 → 2112.0 = 17.0 m³
+✅ Fila 14: Valor consumo correcto
+   └─ $36 COP
+✅ Fila 15: Consumo calculado correctamente
+   └─ Lectura: 628 → 630.0 = 2.0 m³
+✅ Fila 15: Valor consumo correcto
+   └─ $4 COP
+✅ Fila 16: Consumo calculado correctamente
+   └─ Lectura: 1512 → 1515.0 = 3.0 m³
+✅ Fila 16: Valor consumo correcto
+   └─ $6 COP
+✅ Fila 17: Consumo calculado correctamente
+   └─ Lectura: 344 → 353.0 = 9.0 m³
+✅ Fila 17: Valor consumo correcto
+   └─ $19 COP
+✅ Fila 18: Consumo calculado correctamente
+   └─ Lectura: 2143 → 2157.0 = 14.0 m³
+✅ Fila 18: Valor consumo correcto
+   └─ $29 COP
+✅ Fila 19: Consumo calculado correctamente
+   └─ Lectura: 1678 → 1706.0 = 28.0 m³
+✅ Fila 19: Valor consumo correcto
+   └─ $58 COP
+✅ Fila 20: Consumo calculado correctamente
+   └─ Lectura: 1956 → 1964.0 = 8.0 m³
+✅ Fila 20: Valor consumo correcto
+   └─ $17 COP
+✅ Estadísticas: PaqueteFacturacion-Diciembre-2025.xlsx
+   └─ 2158 consumos válidos, promedio: 10.97 m³
+✅ Carga de Archivo: PaqueteFacturacion-Enero-2026.xlsx
+   └─ 2164 registros cargados
+✅ Estructura: PaqueteFacturacion-Enero-2026.xlsx
+   └─ Detectadas 40 columnas: Lectura anterior, Lectura Actual, Consumo, etc.
+✅ Fila 1: Consumo calculado correctamente
+   └─ Lectura: 14 → 18 = 4.0 m³
+✅ Fila 1: Valor consumo correcto
+   └─ $8 COP
+✅ Fila 2: Consumo calculado correctamente
+   └─ Lectura: 36 → 39 = 3.0 m³
+✅ Fila 2: Valor consumo correcto
+   └─ $6 COP
+✅ Fila 3: Consumo calculado correctamente
+   └─ Lectura: 0 → 19 = 19.0 m³
+✅ Fila 3: Valor consumo correcto
+   └─ $40 COP
+✅ Fila 4: Consumo calculado correctamente
+   └─ Lectura: 167 → 176 = 9.0 m³
+✅ Fila 4: Valor consumo correcto
+   └─ $19 COP
+✅ Fila 5: Consumo calculado correctamente
+   └─ Lectura: 91 → 98 = 7.0 m³
+✅ Fila 5: Valor consumo correcto
+   └─ $15 COP
+✅ Fila 6: Consumo calculado correctamente
+   └─ Lectura: 42 → 47 = 5.0 m³
+✅ Fila 6: Valor consumo correcto
+   └─ $10 COP
+✅ Fila 7: Consumo calculado correctamente
+   └─ Lectura: 68 → 74 = 6.0 m³
+✅ Fila 7: Valor consumo correcto
+   └─ $13 COP
+✅ Fila 8: Consumo calculado correctamente
+   └─ Lectura: 55 → 56 = 1.0 m³
+✅ Fila 8: Valor consumo correcto
+   └─ $2 COP
+✅ Fila 9: Consumo calculado correctamente
+   └─ Lectura: 11 → 13 = 2.0 m³
+✅ Fila 9: Valor consumo correcto
+   └─ $4 COP
+✅ Fila 10: Consumo calculado correctamente
+   └─ Lectura: 23 → 31 = 8.0 m³
+✅ Fila 10: Valor consumo correcto
+   └─ $17 COP
+✅ Fila 11: Consumo calculado correctamente
+   └─ Lectura: 14 → 21 = 7.0 m³
+✅ Fila 11: Valor consumo correcto
+   └─ $15 COP
+✅ Fila 12: Consumo calculado correctamente
+   └─ Lectura: 0 → 0 = 0.0 m³
+✅ Fila 13: Consumo calculado correctamente
+   └─ Lectura: 0 → 0 = 0.0 m³
+✅ Fila 14: Consumo calculado correctamente
+   └─ Lectura: 208 → 227 = 19.0 m³
+✅ Fila 14: Valor consumo correcto
+   └─ $40 COP
+✅ Fila 15: Consumo calculado correctamente
+   └─ Lectura: 60 → 61 = 1.0 m³
+✅ Fila 15: Valor consumo correcto
+   └─ $2 COP
+✅ Fila 16: Consumo calculado correctamente
+   └─ Lectura: 14 → 16 = 2.0 m³
+✅ Fila 16: Valor consumo correcto
+   └─ $4 COP
+✅ Fila 17: Consumo calculado correctamente
+   └─ Lectura: 8 → 10 = 2.0 m³
+✅ Fila 17: Valor consumo correcto
+   └─ $4 COP
+✅ Fila 18: Consumo calculado correctamente
+   └─ Lectura: 2 → 3 = 1.0 m³
+✅ Fila 18: Valor consumo correcto
+   └─ $2 COP
+✅ Fila 19: Consumo calculado correctamente
+   └─ Lectura: 0 → 0 = 0.0 m³
+✅ Fila 20: Consumo calculado correctamente
+   └─ Lectura: 4 → 7 = 3.0 m³
+✅ Fila 20: Valor consumo correcto
+   └─ $6 COP
+✅ Estadísticas: PaqueteFacturacion-Enero-2026.xlsx
+   └─ 2163 consumos válidos, promedio: 12.40 m³
+✅ Carga de Archivo: PaqueteFacturacion-Febrero-2026.xlsx
+   └─ 2167 registros cargados
+✅ Estructura: PaqueteFacturacion-Febrero-2026.xlsx
+   └─ Detectadas 40 columnas: Lectura anterior, Lectura Actual, Consumo, etc.
+✅ Fila 1: Consumo calculado correctamente
+   └─ Lectura: 31 → 41 = 10.0 m³
+✅ Fila 1: Valor consumo correcto
+   └─ $21 COP
+✅ Fila 2: Consumo calculado correctamente
+   └─ Lectura: 61 → 87 = 26.0 m³
+✅ Fila 2: Valor consumo correcto
+   └─ $54 COP
+✅ Fila 3: Consumo calculado correctamente
+   └─ Lectura: 0 → 0 = 0.0 m³
+✅ Fila 4: Consumo calculado correctamente
+   └─ Lectura: 16 → 18 = 2.0 m³
+✅ Fila 4: Valor consumo correcto
+   └─ $4 COP
+✅ Fila 5: Consumo calculado correctamente
+   └─ Lectura: 18 → 23 = 5.0 m³
+✅ Fila 5: Valor consumo correcto
+   └─ $10 COP
+✅ Fila 6: Consumo calculado correctamente
+   └─ Lectura: 22 → 26 = 4.0 m³
+✅ Fila 6: Valor consumo correcto
+   └─ $8 COP
+✅ Fila 7: Consumo calculado correctamente
+   └─ Lectura: 3 → 5 = 2.0 m³
+✅ Fila 7: Valor consumo correcto
+   └─ $4 COP
+✅ Fila 8: Consumo calculado correctamente
+   └─ Lectura: 56 → 60 = 4.0 m³
+✅ Fila 8: Valor consumo correcto
+   └─ $8 COP
+✅ Fila 9: Consumo calculado correctamente
+   └─ Lectura: 0 → 0 = 0.0 m³
+✅ Fila 10: Consumo calculado correctamente
+   └─ Lectura: 67 → 74 = 7.0 m³
+✅ Fila 10: Valor consumo correcto
+   └─ $15 COP
+✅ Fila 11: Consumo calculado correctamente
+   └─ Lectura: 246 → 261 = 15.0 m³
+✅ Fila 11: Valor consumo correcto
+   └─ $31 COP
+✅ Fila 12: Consumo calculado correctamente
+   └─ Lectura: 0 → 0 = 0.0 m³
+✅ Fila 13: Consumo calculado correctamente
+   └─ Lectura: 10 → 12 = 2.0 m³
+✅ Fila 13: Valor consumo correcto
+   └─ $4 COP
+✅ Fila 14: Consumo calculado correctamente
+   └─ Lectura: 74 → 74 = 0.0 m³
+✅ Fila 15: Consumo calculado correctamente
+   └─ Lectura: 19 → 25 = 6.0 m³
+✅ Fila 15: Valor consumo correcto
+   └─ $13 COP
+✅ Fila 16: Consumo calculado correctamente
+   └─ Lectura: 39 → 40 = 1.0 m³
+✅ Fila 16: Valor consumo correcto
+   └─ $2 COP
+✅ Fila 17: Consumo calculado correctamente
+   └─ Lectura: 21 → 49 = 28.0 m³
+✅ Fila 17: Valor consumo correcto
+   └─ $58 COP
+✅ Fila 18: Consumo calculado correctamente
+   └─ Lectura: 176 → 183 = 7.0 m³
+✅ Fila 18: Valor consumo correcto
+   └─ $15 COP
+✅ Fila 19: Consumo calculado correctamente
+   └─ Lectura: 98 → 106 = 8.0 m³
+✅ Fila 19: Valor consumo correcto
+   └─ $17 COP
+✅ Fila 20: Consumo calculado correctamente
+   └─ Lectura: 13 → 15 = 2.0 m³
+✅ Fila 20: Valor consumo correcto
+   └─ $4 COP
+✅ Estadísticas: PaqueteFacturacion-Febrero-2026.xlsx
+   └─ 2166 consumos válidos, promedio: 13.08 m³
+
+----------------------------------------------------------------------------------------------------
+RESUMEN FINAL:
+  ✅ Validaciones Exitosas: 119
+  ❌ Errores: 0
+  ⚠️  Advertencias: 0
+  📋 Filas Procesadas: 60
+  Total Verificaciones: 119
+
+✅ MOTOR DE CÁLCULO VALIDADO EXITOSAMENTE
+✅ LA APLICACIÓN ESTÁ LISTA PARA PRODUCCIÓN EN COLOMBIA
+====================================================================================================

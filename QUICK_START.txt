@@ -1,0 +1,238 @@
+GUÍA RÁPIDA - SERVICIOS PÚBLICOS COLOMBIA
+===========================================
+
+⚡ INICIO RÁPIDO EN 5 PASOS
+
+1️⃣ DESCARGAR/CLONAR
+   Locación: c:\App servicios publicos\servicios_publicos\
+
+2️⃣ INSTALAR EN FRAPPE BENCH
+
+   ```bash
+   cd ~/frappe-bench
+   bench get-app servicios_publicos c:\App servicios publicos\servicios_publicos
+   bench install-app servicios_publicos
+   bench migrate
+   bench restart
+   ```
+
+3️⃣ CREAR PRESTADOR DE SERVICIOS
+   
+   Ir a: Servicios Públicos > Administración > Prestador de Servicios
+   Crear empresa (ej: Acueducto Municipal)
+
+4️⃣ CONFIGURAR TARIFAS
+   
+   Ir a: Servicios Públicos > Facturación > Tarifa Servicios
+   Definir precios por unidad de servicio
+
+5️⃣ REGISTRAR CLIENTES
+   
+   Ir a: Servicios Públicos > Clientes > Cliente Servicios Públicos
+   Crear suscriptores
+
+═══════════════════════════════════════════════════════════
+
+📚 DOCUMENTACIÓN DISPONIBLE
+
+├── README.md
+│   └─ Descripción y características principales
+│
+├── INSTALLATION_GUIDE.md
+│   └─ Pasos detallados de instalación
+│   └─ Configuración inicial
+│   └─ Resolución de problemas
+│
+├── ARCHITECTURE.md
+│   └─ Estructura técnica
+│   └─ Diagrama de entidades
+│   └─ Descripción de módulos
+│
+├── CHANGELOG.md
+│   └─ Historial de versiones
+│   └─ DocTypes implementados
+│
+├── PROJECT_SUMMARY.txt
+│   └─ Resumen ejecutivo completo
+│
+└── Este archivo (QUICK_START.txt)
+
+═══════════════════════════════════════════════════════════
+
+🎯 MÓDULOS DISPONIBLES
+
+✅ ADMINISTRACIÓN
+   • Gestión de prestadores
+   • Config. tipos de servicios
+   • Definición de tarifas
+
+✅ CLIENTES
+   • Registro de suscriptores
+   • Gestión de conexiones
+   • Datos de contacto
+
+✅ OPERACIONES
+   • Administración de medidores
+   • Registro de consumo
+   • Trazabilidad de lecturas
+
+✅ FACTURACIÓN
+   • Generación automática de facturas
+   • Registro de pagos
+   • Control de deuda
+
+✅ SERVICIO AL CLIENTE
+   • Sistema de reclamos
+   • Seguimiento de casos
+   • Satisfacción del cliente
+
+═══════════════════════════════════════════════════════════
+
+🔧 FLUJO TÍPICO DE USO
+
+LECTURA DE MEDIDOR
+├─ Operario registra lectura
+├─ Sistema calcula consumo
+└─ Lectura confirmada
+
+FACTURACIÓN
+├─ Sistema crea factura automática
+├─ Se aplica tarifa vigente
+└─ Cliente recibe factura
+
+PAGO
+├─ Cliente realiza pago
+├─ Se registra transacción
+└─ Factura marcada como pagada
+
+SOPORTE
+├─ Cliente reporta problema
+├─ Se crea reclamo
+├─ Responsable investiga
+└─ Se registra resolución
+
+═══════════════════════════════════════════════════════════
+
+🔑 CLAVES Y CARACTERÍSTICAS
+
+📊 DATABASE:
+   • PostgreSQL o MySQL con InnoDB
+   • 16 DocTypes principales
+   • Auditoría completa
+   • Relaciones normalizadas
+
+🔐 SEGURIDAD:
+   • Control de acceso por roles
+   • Validación de datos
+   • Historial de cambios
+   • Encriptación de datos
+
+⚡ PERFORMANCE:
+   • Índices optimizados
+   • Queries eficientes
+   • Caching integrado
+   • Búsqueda rápida
+
+🌐 INTEGRACIÓN:
+   • APIs REST personalizadas
+   • Webhooks disponibles
+   • Integración ERPNext
+   • Compatible con módulos
+
+═══════════════════════════════════════════════════════════
+
+💾 APIs DISPONIBLES
+
+Obtener deuda de cliente:
+POST /api/resource/servicios_publicos.api.obtener_deuda_cliente
+Body: {"cliente": "CLIENT-001"}
+
+Últimas lecturas:
+GET /api/resource/servicios_publicos.api.obtener_ultimas_lecturas
+?conexion_de_servicio=CONN-001&limite=5
+
+Consumo promedio:
+GET /api/resource/servicios_publicos.api.obtener_consumo_promedio
+?conexion_de_servicio=CONN-001&meses=3
+
+Reclamos abiertos:
+GET /api/resource/servicios_publicos.api.listar_reclamos_abiertos
+?prestador_de_servicios=PRESTADOR-001
+
+Crear factura:
+POST /api/resource/servicios_publicos.api.crear_factura_desde_lectura
+Body: {"numero_lectura": "LECT-001"}
+
+═══════════════════════════════════════════════════════════
+
+👥 ROLES POR DEFECTO
+
+🔴 Administrador: Acceso completo
+
+🟡 Administrador de Servicios: Gestión operativa
+
+🟢 Operario: Lectura de medidores
+
+🔵 Facturador: Facturación y pagos
+
+⚪ Cliente: Consulta propia información
+
+═══════════════════════════════════════════════════════════
+
+❓ PREGUNTAS FRECUENTES
+
+P: ¿Qué versión de ERPNext necesito?
+R: ERPNext 15 o superior
+
+P: ¿Puedo usar múltiples prestadores?
+R: Sí, la aplicación soporta múltiples prestadores simultáneamente
+
+P: ¿Se generan facturas automáticamente?
+R: Sí, desde lecturas de medidores. También se pueden crear manualmente.
+
+P: ¿Hay modo de prueba/demo?
+R: Sí, puede crear datos de demostración para testear
+
+P: ¿Cómo integro con mis sistemas?
+R: Mediante las APIs REST o Webhooks disponibles
+
+P: ¿Es escalable?
+R: Sí, diseñado para crecer con su negocio
+
+═══════════════════════════════════════════════════════════
+
+🆘 SI ALGO NO FUNCIONA
+
+1. Verificar que ERPNext 15 está instalado:
+   bench version
+
+2. Verificar que la app está instalada:
+   bench list-apps | grep servicios_publicos
+
+3. Ejecutar migraciones:
+   bench migrate
+
+4. Limpiar caché:
+   bench clear-cache
+
+5. Reiniciar:
+   bench restart
+
+═══════════════════════════════════════════════════════════
+
+📞 CONTACTO Y SOPORTE
+
+Para reportar problemas:
+- Abrir issue en el repositorio
+- Contactar al equipo de desarrollo
+- Revisar INSTALLATION_GUIDE.md
+
+Licencia: GNU General Public License v3.0 (GPL-3.0)
+
+═══════════════════════════════════════════════════════════
+
+¡LISTO PARA INSTALAR!
+
+Próximo paso: Revisar README.md y INSTALLATION_GUIDE.md
+
+¡Bienvenido a Servicios Públicos Colombia! 🇨🇴

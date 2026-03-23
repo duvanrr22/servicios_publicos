@@ -1,0 +1,139 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-01-15 10:00:00.000000",
+ "default_print_format": "Standard",
+ "doctype": "DocType",
+ "document_type": "Settings",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "accounting_section",
+  "default_company",
+  "default_bank_account",
+  "default_cost_center",
+  "revenue_account",
+  "receivable_account",
+  "integration_section",
+  "sync_to_standard_frappe",
+  "auto_create_sales_invoice",
+  "auto_create_journal_entry",
+  "auto_create_payment_entry",
+  "advanced_section",
+  "enable_logging",
+  "log_level"
+ ],
+ "fields": [
+  {
+   "fieldname": "accounting_section",
+   "fieldtype": "Section Break",
+   "label": "Configuración Contable"
+  },
+  {
+   "fieldname": "default_company",
+   "fieldtype": "Link",
+   "label": "Empresa por Defecto",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "default_bank_account",
+   "fieldtype": "Link",
+   "label": "Cuenta Bancaria por Defecto",
+   "options": "Bank Account"
+  },
+  {
+   "fieldname": "default_cost_center",
+   "fieldtype": "Link",
+   "label": "Centro de Costo por Defecto",
+   "options": "Cost Center"
+  },
+  {
+   "fieldname": "revenue_account",
+   "fieldtype": "Link",
+   "label": "Cuenta de Ingresos",
+   "options": "Account"
+  },
+  {
+   "fieldname": "receivable_account",
+   "fieldtype": "Link",
+   "label": "Cuenta por Cobrar",
+   "options": "Account"
+  },
+  {
+   "fieldname": "integration_section",
+   "fieldtype": "Section Break",
+   "label": "Integración"
+  },
+  {
+   "fieldname": "sync_to_standard_frappe",
+   "fieldtype": "Check",
+   "label": "Sincronizar con Módulos Estándar",
+   "default": 1,
+   "description": "Habilita la sincronización automática con DocTypes estándar de Frappe"
+  },
+  {
+   "fieldname": "auto_create_sales_invoice",
+   "fieldtype": "Check",
+   "label": "Auto-crear Sales Invoice",
+   "default": 1,
+   "description": "Crea automáticamente una Sales Invoice cuando se emite una Factura de Servicios"
+  },
+  {
+   "fieldname": "auto_create_journal_entry",
+   "fieldtype": "Check",
+   "label": "Auto-crear Journal Entry",
+   "default": 1,
+   "description": "Crea automáticamente un Journal Entry cuando se emite una Factura de Servicios"
+  },
+  {
+   "fieldname": "auto_create_payment_entry",
+   "fieldtype": "Check",
+   "label": "Auto-crear Payment Entry",
+   "default": 1,
+   "description": "Crea automáticamente un Payment Entry cuando se registra un Pago de Servicios"
+  },
+  {
+   "fieldname": "advanced_section",
+   "fieldtype": "Section Break",
+   "label": "Opciones Avanzadas"
+  },
+  {
+   "fieldname": "enable_logging",
+   "fieldtype": "Check",
+   "label": "Habilitar Logging",
+   "default": 1
+  },
+  {
+   "fieldname": "log_level",
+   "fieldtype": "Select",
+   "label": "Nivel de Log",
+   "options": "DEBUG\nINFO\nWARNING\nERROR",
+   "default": "INFO"
+  }
+ ],
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-01-15 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Servicios Públicos",
+ "name": "Servicios Publicos Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

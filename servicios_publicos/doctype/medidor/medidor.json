@@ -1,0 +1,154 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:numero_medidor",
+ "creation": "2024-01-15 10:00:00.000000",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "numero_medidor",
+  "tipo_de_servicio",
+  "marca",
+  "column_break_4",
+  "modelo",
+  "serial",
+  "especificaciones_section",
+  "capacidad_maxima",
+  "precision",
+  "fecha_calibracion",
+  "proxima_calibracion",
+  "estado_section",
+  "estado",
+  "fecha_instalacion",
+  "fecha_retiro",
+  "observaciones"
+ ],
+ "fields": [
+  {
+   "fieldname": "numero_medidor",
+   "fieldtype": "Data",
+   "label": "Número de Medidor",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "tipo_de_servicio",
+   "fieldtype": "Link",
+   "label": "Tipo de Servicio",
+   "options": "Tipo de Servicio",
+   "reqd": 1
+  },
+  {
+   "fieldname": "marca",
+   "fieldtype": "Data",
+   "label": "Marca",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "modelo",
+   "fieldtype": "Data",
+   "label": "Modelo"
+  },
+  {
+   "fieldname": "serial",
+   "fieldtype": "Data",
+   "label": "Número Serial",
+   "unique": 1
+  },
+  {
+   "fieldname": "especificaciones_section",
+   "fieldtype": "Section Break",
+   "label": "Especificaciones Técnicas"
+  },
+  {
+   "fieldname": "capacidad_maxima",
+   "fieldtype": "Float",
+   "label": "Capacidad Máxima",
+   "precision": "2"
+  },
+  {
+   "fieldname": "precision",
+   "fieldtype": "Select",
+   "label": "Precisión",
+   "options": "Clase 1\nClase 1.5\nClase 2\nClase 3"
+  },
+  {
+   "fieldname": "fecha_calibracion",
+   "fieldtype": "Date",
+   "label": "Fecha de Calibración"
+  },
+  {
+   "fieldname": "proxima_calibracion",
+   "fieldtype": "Date",
+   "label": "Próxima Calibración"
+  },
+  {
+   "fieldname": "estado_section",
+   "fieldtype": "Section Break",
+   "label": "Estado"
+  },
+  {
+   "fieldname": "estado",
+   "fieldtype": "Select",
+   "label": "Estado",
+   "options": "Disponible\nInstalado\nRetirado\nDañado\nEn Mantenimiento",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fecha_instalacion",
+   "fieldtype": "Date",
+   "label": "Fecha de Instalación"
+  },
+  {
+   "fieldname": "fecha_retiro",
+   "fieldtype": "Date",
+   "label": "Fecha de Retiro"
+  },
+  {
+   "fieldname": "observaciones",
+   "fieldtype": "Text",
+   "label": "Observaciones"
+  }
+ ],
+ "is_submittable": 0,
+ "links": [],
+ "modified": "2024-01-15 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Servicios Publicos",
+ "name": "Medidor",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "submit": 0,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrador de Servicios",
+   "share": 0,
+   "submit": 0,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

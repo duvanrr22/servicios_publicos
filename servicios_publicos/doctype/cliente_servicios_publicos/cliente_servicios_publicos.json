@@ -1,0 +1,208 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-01-15 10:00:00.000000",
+ "default_print_format": "Cliente",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "codigo_cliente",
+  "nombre_completo",
+  "tipo_identificacion",
+  "column_break_1",
+  "numero_identificacion",
+  "email",
+  "telefono",
+  "contacto_section",
+  "direccion_residencia",
+  "barrio",
+  "ciudad",
+  "departamento",
+  "codigo_postal",
+  "servicios_section",
+  "prestador_de_servicios",
+  "estado_cliente",
+  "servicios_contratados",
+  "informacion_adicional_section",
+  "ocupacion",
+  "estado_civil",
+  "fecha_registro",
+  "categoria_cliente"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Serie de Nomenclatura",
+   "options": "CLIENT-.YYYY.-",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "codigo_cliente",
+   "fieldtype": "Data",
+   "label": "Código de Cliente",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "nombre_completo",
+   "fieldtype": "Data",
+   "label": "Nombre Completo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tipo_identificacion",
+   "fieldtype": "Select",
+   "label": "Tipo de Identificación",
+   "options": "Cédula de Ciudadanía (CC)\nCédula de Extranjería (CE)\nNIT\nPasaporte",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "numero_identificacion",
+   "fieldtype": "Data",
+   "label": "Número de Identificación",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Email",
+   "label": "Correo Electrónico"
+  },
+  {
+   "fieldname": "telefono",
+   "fieldtype": "Phone",
+   "label": "Teléfono Principal"
+  },
+  {
+   "fieldname": "contacto_section",
+   "fieldtype": "Section Break",
+   "label": "Dirección y Localización"
+  },
+  {
+   "fieldname": "direccion_residencia",
+   "fieldtype": "Small Text",
+   "label": "Dirección de Residencia",
+   "reqd": 1
+  },
+  {
+   "fieldname": "barrio",
+   "fieldtype": "Data",
+   "label": "Barrio/Sector"
+  },
+  {
+   "fieldname": "ciudad",
+   "fieldtype": "Link",
+   "label": "Ciudad",
+   "options": "City"
+  },
+  {
+   "fieldname": "departamento",
+   "fieldtype": "Link",
+   "label": "Departamento",
+   "options": "State"
+  },
+  {
+   "fieldname": "codigo_postal",
+   "fieldtype": "Data",
+   "label": "Código Postal"
+  },
+  {
+   "fieldname": "servicios_section",
+   "fieldtype": "Section Break",
+   "label": "Servicios"
+  },
+  {
+   "fieldname": "prestador_de_servicios",
+   "fieldtype": "Link",
+   "label": "Prestador de Servicios Principal",
+   "options": "Prestador de Servicios"
+  },
+  {
+   "fieldname": "estado_cliente",
+   "fieldtype": "Select",
+   "label": "Estado del Cliente",
+   "options": "Activo\nInactivo\nSuspendido\nMoroso",
+   "reqd": 1
+  },
+  {
+   "fieldname": "servicios_contratados",
+   "fieldtype": "Table",
+   "label": "Servicios Contratados",
+   "options": "Cliente_Servicio"
+  },
+  {
+   "fieldname": "informacion_adicional_section",
+   "fieldtype": "Section Break",
+   "label": "Información Adicional"
+  },
+  {
+   "fieldname": "ocupacion",
+   "fieldtype": "Data",
+   "label": "Ocupación"
+  },
+  {
+   "fieldname": "estado_civil",
+   "fieldtype": "Select",
+   "label": "Estado Civil",
+   "options": "Soltero/a\nCasado/a\nUnión Libre\nDivorciado/a\nViudo/a"
+  },
+  {
+   "fieldname": "fecha_registro",
+   "fieldtype": "Date",
+   "label": "Fecha de Registro",
+   "read_only": 1
+  },
+  {
+   "fieldname": "categoria_cliente",
+   "fieldtype": "Select",
+   "label": "Categoría de Cliente",
+   "options": "Residencial\nComercial\nIndustrial\nOficial"
+  }
+ ],
+ "is_submittable": 0,
+ "links": [],
+ "modified": "2024-01-15 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Servicios Publicos",
+ "name": "Cliente Servicios Públicos",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "submit": 0,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrador de Servicios",
+   "share": 0,
+   "submit": 0,
+   "write": 1
+  }
+ ],
+ "search_fields": "nombre_completo,numero_identificacion,codigo_cliente",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

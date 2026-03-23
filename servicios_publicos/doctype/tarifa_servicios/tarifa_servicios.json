@@ -1,0 +1,193 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:codigo",
+ "creation": "2024-01-15 10:00:00.000000",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "codigo",
+  "tipo_de_servicio",
+  "prestador_de_servicios",
+  "column_break_4",
+  "fecha_vigencia",
+  "fecha_vencimiento",
+  "detalles_section",
+  "rango_consumo_minimo",
+  "rango_consumo_maximo",
+  "valor_tarifa",
+  "valor_fijo_factura",
+  "tipos_usuarios_section",
+  "categoria_cliente",
+  "sobretasa_section",
+  "aplica_sobretasa",
+  "valor_sobretasa",
+  "rango_sobretasa_minimo",
+  "rango_sobretasa_maximo",
+  "estado_section",
+  "estado",
+  "descripcion"
+ ],
+ "fields": [
+  {
+   "fieldname": "codigo",
+   "fieldtype": "Data",
+   "label": "Código de Tarifa",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "tipo_de_servicio",
+   "fieldtype": "Link",
+   "label": "Tipo de Servicio",
+   "options": "Tipo de Servicio",
+   "reqd": 1
+  },
+  {
+   "fieldname": "prestador_de_servicios",
+   "fieldtype": "Link",
+   "label": "Prestador de Servicios",
+   "options": "Prestador de Servicios",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fecha_vigencia",
+   "fieldtype": "Date",
+   "label": "Fecha de Vigencia",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fecha_vencimiento",
+   "fieldtype": "Date",
+   "label": "Fecha de Vencimiento"
+  },
+  {
+   "fieldname": "detalles_section",
+   "fieldtype": "Section Break",
+   "label": "Rangos de Consumo"
+  },
+  {
+   "fieldname": "rango_consumo_minimo",
+   "fieldtype": "Float",
+   "label": "Consumo Mínimo",
+   "precision": "2"
+  },
+  {
+   "fieldname": "rango_consumo_maximo",
+   "fieldtype": "Float",
+   "label": "Consumo Máximo",
+   "precision": "2"
+  },
+  {
+   "fieldname": "valor_tarifa",
+   "fieldtype": "Currency",
+   "label": "Valor Tarifa por Unidad",
+   "precision": "4",
+   "reqd": 1
+  },
+  {
+   "fieldname": "valor_fijo_factura",
+   "fieldtype": "Currency",
+   "label": "Valor Fijo de Factura",
+   "precision": "2"
+  },
+  {
+   "fieldname": "tipos_usuarios_section",
+   "fieldtype": "Section Break",
+   "label": "Aplicable a"
+  },
+  {
+   "fieldname": "categoria_cliente",
+   "fieldtype": "Select",
+   "label": "Categoría de Cliente",
+   "options": "Residencial\nComercial\nIndustrial\nOficial\nTodas",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sobretasa_section",
+   "fieldtype": "Section Break",
+   "label": "Sobretasa (Opcional)"
+  },
+  {
+   "fieldname": "aplica_sobretasa",
+   "fieldtype": "Check",
+   "label": "Aplica Sobretasa"
+  },
+  {
+   "fieldname": "valor_sobretasa",
+   "fieldtype": "Float",
+   "label": "Valor Sobretasa (%)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "rango_sobretasa_minimo",
+   "fieldtype": "Float",
+   "label": "Aplica Sobretasa desde",
+   "precision": "2"
+  },
+  {
+   "fieldname": "rango_sobretasa_maximo",
+   "fieldtype": "Float",
+   "label": "Aplica Sobretasa hasta",
+   "precision": "2"
+  },
+  {
+   "fieldname": "estado_section",
+   "fieldtype": "Section Break",
+   "label": "Estado"
+  },
+  {
+   "fieldname": "estado",
+   "fieldtype": "Select",
+   "label": "Estado",
+   "options": "Activa\nInactiva\nObtemplada",
+   "reqd": 1
+  },
+  {
+   "fieldname": "descripcion",
+   "fieldtype": "Text",
+   "label": "Descripción"
+  }
+ ],
+ "is_submittable": 0,
+ "links": [],
+ "modified": "2024-01-15 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Servicios Publicos",
+ "name": "Tarifa Servicios",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "submit": 0,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrador de Servicios",
+   "share": 0,
+   "submit": 0,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
