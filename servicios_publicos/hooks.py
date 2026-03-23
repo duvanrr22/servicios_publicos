@@ -19,12 +19,13 @@ app_icon = "servicios_publicos/public/synapse_logo.png"
 tagline = "Agua • Luz • Gas • Datos"
 
 # Assets - Minimal (solo rutas que existen)
-app_include_css = [
-	"servicios_publicos/public/css/servicios_publicos.css"
-]
-app_include_js = [
-	"servicios_publicos/public/js/servicios_publicos.js"
-]
+# COMENTADO: esbuild tiene problemas con esta ruta, investigar después
+# app_include_css = [
+# 	"servicios_publicos/public/css/servicios_publicos.css"
+# ]
+# app_include_js = [
+# 	"servicios_publicos/public/js/servicios_publicos.js"
+# ]
 
 # Migrations - Solo las funciones que existen
 # migrate_list = []  # Comentado hasta verificar que existan
